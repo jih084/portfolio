@@ -1,8 +1,12 @@
 :root {
+  color-scheme: light dark;
   --color-accent: oklch(80.27% 0.082 224.21); 
 }
 
 body {
+  background-color: Canvas;
+  color: CanvasText;
+
   font: 100%/1.5 system-ui;
   max-width: 100ch;
   margin-inline: auto;
@@ -18,9 +22,10 @@ img {
 
 /* Navigation bar */
 nav {
+  --border-color: oklch(50% 10% 200 / 40%);
   display: flex;
   margin-bottom: 20px;
-  border-bottom: 1px solid var(--color-accent); 
+  border-bottom: 1px solid var(--border-color);
 }
 
 /* Navigation link */
@@ -36,7 +41,7 @@ nav a {
 /* Hover effect */
 nav a:hover {
   border-bottom: 0.4em solid oklch(80% 3% 200);
-  background-color: oklch(from var(--color-accent) 95% 5% h); 
+  background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
   border-radius: 4px;
 }
 
@@ -117,3 +122,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5em;
 }
 
+.color-scheme {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 80%;
+  font-family: inherit;
+}

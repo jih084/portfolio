@@ -36,9 +36,46 @@ for (let p of pages) {
     );
     
     a.toggleAttribute('target', a.host !== location.host);
-    a.target = '_blank';
-
+    if (title === 'GitHub') {
+      a.target = '_blank';
+    }
 
     nav.append(a);
 }
 
+document.body.insertAdjacentHTML(
+  'afterbegin',
+  `
+  <label class="color-scheme">
+    Theme:
+    <select>
+      <option value="light dark">Automatic</option>
+      <option value="light">Light</option>
+      <option value="dark">Dark</option>
+    </select>
+  </label>
+  `
+);
+
+//4.4
+const select = document.querySelector('.color-scheme select');
+
+select.addEventListener('input', function (event) {
+  document.documentElement.style.setProperty('color-scheme', event.target.value);
+});
+
+
+//4.5
+function setColorScheme(scheme) {
+  document.documentElement.style.setProperty('color-scheme', scheme);
+  select.value = scheme;
+}
+
+select.addEventListener('input', function (event) {
+  const scheme = event.target.value;
+  localStorage.colorScheme = scheme;
+  setColorScheme(scheme);
+});
+
+const savedScheme = localStorage.colorScheme || 'light dark';
+setColorScheme(savedScheme);
