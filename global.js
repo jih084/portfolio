@@ -79,3 +79,22 @@ select.addEventListener('input', function (event) {
 
 const savedScheme = localStorage.colorScheme || 'light dark';
 setColorScheme(savedScheme);
+
+//5 (optional)Better contact form
+const form = document.querySelector('form');
+
+form?.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const data = new FormData(form);
+
+  let url = form.action + '?';
+
+  for (let [name, value] of data) {
+    url += `${name}=${encodeURIComponent(value)}&`;
+  }
+
+  url = url.slice(0, -1);
+
+  location.href = url;
+});
