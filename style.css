@@ -129,3 +129,37 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 80%;
   font-family: inherit;
 }
+
+/* lab4 styling for home page stats */
+#profile-stats {
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+#profile-stats h2 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#profile-stats dl {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  gap: 10px;
+  text-align: center;
+}
+
+#profile-stats dt {
+  font-weight: normal; /* Remove bold */
+  text-transform: uppercase;
+  font-size: 0.9em;
+  grid-row: 1; /* Place <dt> in the first row */
+}
+
+#profile-stats dd {
+  color: gray; /* Light gray text */
+  font-size: 1.5em;
+  font-weight: normal; /* Remove bold */
+  grid-row: 2; /* Place <dd> in the second row */
+  margin: 0;
+}

@@ -1,8 +1,8 @@
 [
     {
-        "title": "Lorem ipsum dolor sit.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id asperiores consequatur corrupti voluptatum modi quam nobis reiciendis sed culpa, magni dolorum recusandae sapiente commodi minima est repellat repellendus nam quibusdam."
+        "title": "Recipe Rating Analysis Project",
+        "image": "https://github.com/zoeyyhe/Recipe-Rating-Linear-Regression",
+        "description": "This project explores the relationship between recipe ratings and preparation time using data from Food.com. By analyzing thousands of user-submitted ratings and recipe details, we aim to discover whether prep time influences how recipes are rated."
     },
     {
         "title": "Natus laboriosam adipisci hic?",
