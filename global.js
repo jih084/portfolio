@@ -98,3 +98,38 @@ form?.addEventListener('submit', (event) => {
 
   location.href = url;
 });
+
+//lab 4
+export async function fetchJSON(url) {
+  try {
+      // Fetch the JSON file from the given URL
+      const response = await fetch(url);
+
+      // Handling Errors: Check if the response is successful
+      if (!response.ok) {
+          throw new Error(`Failed to fetch projects: ${response.statusText}`);
+      }
+
+      // Parsing the Data: Convert response to JSON format
+      const data = await response.json();
+      return data;
+
+  } catch (error) {
+      console.error('Error fetching or parsing JSON data:', error);
+  }
+}
+export function renderProjects(projects, containerElement, headingLevel = 'h2') {
+  containerElement.innerHTML = ''; // Step 2: Clear previous content
+
+  for (const project of projects) {
+      const article = document.createElement('article'); // Step 3: Create an article
+
+      article.innerHTML = `
+          <${headingLevel}>${project.title}</${headingLevel}>
+          <img src="${project.image}" alt="${project.title}">
+          <p>${project.description}</p>
+      `;
+
+      containerElement.appendChild(article); // Step 5: Append the article
+  }
+}
