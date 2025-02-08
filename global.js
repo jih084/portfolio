@@ -119,20 +119,25 @@ export async function fetchJSON(url) {
   }
 }
 export function renderProjects(projects, containerElement, headingLevel = 'h2') {
-  containerElement.innerHTML = ''; // Step 2: Clear previous content
+  containerElement.innerHTML = ''; // Clear previous content
 
   for (const project of projects) {
-      const article = document.createElement('article'); // Step 3: Create an article
+      const article = document.createElement('article'); // Create an article
 
       article.innerHTML = `
           <${headingLevel}>${project.title}</${headingLevel}>
           <img src="${project.image}" alt="${project.title}">
-          <p>${project.description}</p>
+          <div class="project-details">
+              <p>${project.description}</p>
+              ${project.year ? `<p class="project-year">c. ${project.year}</p>` : ''}
+          </div>
       `;
 
-      containerElement.appendChild(article); // Step 5: Append the article
+      containerElement.appendChild(article); // Append the article
   }
 }
+
+
 export async function fetchGitHubData(username) {
   return fetchJSON(`https://api.github.com/users/${username}`);
 }

@@ -7,11 +7,26 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
+
     <h1 class="projects-title">Projects</h1>
-    <div class="projects">
+
+    <!-- Container for Pie Chart and Legend -->
+    <div class="chart-container">
+        <!-- Pie Chart -->
+        <svg id="projects-plot" viewBox="-50 -50 100 100"></svg>
+    
+        <!-- Legend -->
+        <ul class="legend"></ul>
+    
     </div>
-    <script src="projects.js" type="module"></script>
+    <input class="searchBar" type="search" aria-label="Search projects" placeholder="🔍 Search projects…">
+
+    <!-- Projects List -->
+    <div class="projects"></div>
+
+    <!-- Import JavaScript files -->
     <script src="../global.js" type="module"></script>
+    <script src="projects.js" type="module"></script>
 
 </body>
 </html>

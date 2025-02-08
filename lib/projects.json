@@ -1,61 +1,73 @@
 [
     {
         "title": "Recipe Rating Analysis Project",
-        "image": "https://github.com/zoeyyhe/Recipe-Rating-Linear-Regression",
+        "year": "2024",
+        "image": "lib/images/Recipe.png",
         "description": "This project explores the relationship between recipe ratings and preparation time using data from Food.com. By analyzing thousands of user-submitted ratings and recipe details, we aim to discover whether prep time influences how recipes are rated."
     },
     {
         "title": "Movies Metascore ratings and box office Analysis",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "year":"2023",
+        "image": "lib/images/movies.png",
         "description": "Incidunt aliquid error quaerat mollitia veritatis aut, quam beatae optio nam labore eveniet tenetur commodi iste pariatur enim iusto magni! Fugiat harum magni molestiae modi exercitationem ut reprehenderit, cum amet."
     },
     {
         "title": "Design and Advanced Manufacturing of Hexaboride High Entropy Ceramics",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "year":"2025",
+        "image": "lib/images/neutrons.png",
         "description": "Maiores voluptas distinctio quisquam commodi id. Aliquid culpa ducimus sunt ab asperiores, voluptatum rem non deserunt vel pariatur labore tenetur ex esse atque aspernatur blanditiis numquam magni excepturi tempora et."
     },
     {
-        "title": "Consequatur voluptatibus necessitatibus soluta.",
+        "title": "Solar System portable shower station",
+        "year": "2022",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Ipsum, tenetur perspiciatis ad nostrum odit molestias modi atque, aut odio repellendus enim iure nisi autem, a reiciendis consequuntur cumque dolorum aperiam recusandae voluptatum! Quidem ipsum magni porro ex molestiae."
     },
     {
-        "title": "Eius officia quasi natus!",
+        "title": "Predicting Clothing Fit: A Random Forest Approach Using User-Specific Features",
+        "year":"2024",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Similique temporibus vitae corporis, accusantium reprehenderit rerum obcaecati, earum illum excepturi unde exercitationem aperiam voluptates corrupti deserunt provident ducimus iure quae labore sed! Explicabo quia enim quis iure est ipsum!"
     },
     {
-        "title": "Culpa velit rem nostrum?",
+        "title": "Study of weather in San Diego",
+        "year": "2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Aliquam, voluptas quidem impedit minima, soluta dolore autem possimus omnis maxime, aliquid animi tenetur corporis blanditiis voluptate fugit molestias. Accusamus quos enim quo voluptate veniam ad et quasi delectus non!"
     },
     {
-        "title": "Suscipit perferendis beatae omnis!",
+        "title": "Kaggle survey 2020 STEM responses analysis",
+        "year":"2024",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Accusamus consequatur, accusantium eius ducimus doloremque molestias rerum dignissimos, aut sint culpa incidunt alias? Laborum consequuntur nam nulla maxime voluptatem minus quia, atque cupiditate ipsam tempore quis vitae fugit blanditiis!"
     },
     {
-        "title": "Illo doloribus corrupti dicta.",
+        "title": "Analysis of Cats and Dogs' attachment to owners",
+        "year":"2022",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "At quis blanditiis reiciendis saepe, recusandae doloribus rem? Cupiditate pariatur quo ipsam delectus animi possimus accusamus ex quisquam minima neque, rem unde adipisci iste libero quaerat vero! Nobis, reiciendis id."
     },
     {
-        "title": "Sapiente dolorem similique quas.",
+        "title": "How to make up project names when you have no 12 projects",
+        "year": "2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Deleniti, qui minus hic labore alias tempore at velit incidunt atque fuga cupiditate. Repellat error deleniti animi sapiente, cum veritatis hic tenetur repudiandae eos distinctio neque? Consequuntur provident magnam voluptas?"
     },
     {
-        "title": "Ipsam, beatae culpa! Iusto?",
+        "title": "Rating prediction on movies from users",
+        "year":"2024",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Qui aliquid ullam, molestiae eum nobis assumenda, nesciunt maxime voluptates aperiam quae possimus officia perferendis iusto cum vel deserunt incidunt voluptatibus dicta praesentium reiciendis eius ipsa esse odio. Repellat, culpa."
     },
     {
-        "title": "Repellat repudiandae beatae minima.",
+        "title": "Neutron detector materials study",
+        "year": "2024",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Est, animi ad? Commodi sint aliquam dolores alias voluptates vero vitae dolore odio, nisi labore rerum quia, placeat praesentium ab corrupti esse cum a tempore molestiae eveniet? Saepe, cum deserunt!"
     },
     {
-        "title": "Corporis numquam necessitatibus quia.",
+        "title": "The impact of import tax on different classes' purchase behavior",
+        "year": "2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Ea, ab obcaecati dolorum nobis vel minus animi, at, deserunt tempore eaque laudantium! Ratione quo, autem voluptatem pariatur velit dignissimos ipsa animi dolore, inventore porro adipisci quae sed facere ipsum?"
     }
