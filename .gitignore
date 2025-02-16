@@ -1,0 +1,5 @@
+# Ignore the generated CSV file
+meta/loc.csv
+
+# Ignore Node.js dependencies
+node_modules/

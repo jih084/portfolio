@@ -5,14 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meta Analysis - Code Statistics</title>
     <link rel="stylesheet" href="../style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
 </head>
 <body>
+
+    <script src="../global.js" type="module"></script>
+
     <h1>Meta</h1>
     <p>This page provides an analysis of our codebase, including file counts, line counts, and other useful insights.</p>
 
-
-    <script src="meta.js" type="module"></script>
-    <script src="../global.js" type="module"></script>
+    <!-- Matching GitHub Stats Layout -->
+    <div id="summary-stats">
+        <h2>Codebase Stats</h2>
+        <dl></dl>
+    </div>
+    <h2>Commits by Time of Day</h2>
+    <div id="chart"></div>
+    <dl id="commit-tooltip" class="info tooltip" hidden>
+        <dt>Commit</dt>
+        <dd>
+          <a href="" id="commit-link" target="_blank"></a>
+        </dd>
+      
+        <dt>Date</dt>
+        <dd id="commit-date"></dd>
+      
+        <dt>Time</dt>
+        <dd id="commit-time"></dd>
+      
+        <dt>Author</dt>
+        <dd id="commit-author"></dd>
+      
+        <dt>Lines Edited</dt>
+        <dd id="commit-lines"></dd>
+      </dl>
+      
+    <script src="main.js" type="module"></script>
 
 </body>
 </html>
