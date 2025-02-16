@@ -215,3 +215,47 @@ function updateLanguageBreakdown() {
     }
 }
 
+// Tooltip Functions (Only This Part Is Modified)
+function updateTooltipPosition(event) {
+    const tooltip = document.getElementById('commit-tooltip');
+    const tooltipWidth = tooltip.offsetWidth;
+    const tooltipHeight = tooltip.offsetHeight;
+
+    // Adjust position to prevent tooltip from going off screen
+    let xPos = event.clientX + 10;
+    let yPos = event.clientY + 10;
+
+    if (xPos + tooltipWidth > window.innerWidth) {
+        xPos = event.clientX - tooltipWidth - 10;
+    }
+    if (yPos + tooltipHeight > window.innerHeight) {
+        yPos = event.clientY - tooltipHeight - 10;
+    }
+
+    tooltip.style.left = `${xPos}px`;
+    tooltip.style.top = `${yPos}px`;
+}
+
+function updateTooltipVisibility(isVisible) {
+    const tooltip = document.getElementById('commit-tooltip');
+    tooltip.style.opacity = isVisible ? 1 : 0;
+    tooltip.style.visibility = isVisible ? "visible" : "hidden";
+}
+
+function updateTooltipContent(commit) {
+    const link = document.getElementById('commit-link');
+    const date = document.getElementById('commit-date');
+
+    if (!commit.id) {
+        updateTooltipVisibility(false);
+        return;
+    }
+
+    link.href = commit.url;
+    link.textContent = commit.id;
+    date.textContent = commit.datetime?.toLocaleString('en', {
+        dateStyle: 'full',
+    });
+
+    updateTooltipVisibility(true);
+}
