@@ -242,9 +242,13 @@ function updateTooltipVisibility(isVisible) {
     tooltip.style.visibility = isVisible ? "visible" : "hidden";
 }
 
+
 function updateTooltipContent(commit) {
     const link = document.getElementById('commit-link');
     const date = document.getElementById('commit-date');
+    const time = document.getElementById('commit-time');
+    const author = document.getElementById('commit-author');
+    const linesEdited = document.getElementById('commit-lines');
 
     if (!commit.id) {
         updateTooltipVisibility(false);
@@ -253,9 +257,10 @@ function updateTooltipContent(commit) {
 
     link.href = commit.url;
     link.textContent = commit.id;
-    date.textContent = commit.datetime?.toLocaleString('en', {
-        dateStyle: 'full',
-    });
+    date.textContent = commit.datetime?.toLocaleString('en', { dateStyle: 'full' });
+    time.textContent = commit.time || "N/A";
+    author.textContent = commit.author || "Unknown";
+    linesEdited.textContent = commit.totalLines || "0";
 
     updateTooltipVisibility(true);
 }
