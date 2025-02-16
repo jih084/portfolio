@@ -14,32 +14,40 @@
     <h1>Meta</h1>
     <p>This page provides an analysis of our codebase, including file counts, line counts, and other useful insights.</p>
 
-    <!-- Matching GitHub Stats Layout -->
+    <!-- Summary Stats Section -->
     <div id="summary-stats">
-        <h2>Codebase Stats</h2>
+        <h2>Summary</h2>
         <dl></dl>
     </div>
+
+    <!-- Scatterplot Section -->
     <h2>Commits by Time of Day</h2>
     <div id="chart"></div>
+
+    <!-- Selection Count -->
+    <p id="selection-count">No commits selected</p>
+
+    <!-- Language Breakdown -->
+    <dl id="language-breakdown" class="stats"></dl>
+
+    <!-- Tooltip -->
     <dl id="commit-tooltip" class="info tooltip" hidden>
         <dt>Commit</dt>
-        <dd>
-          <a href="" id="commit-link" target="_blank"></a>
-        </dd>
-      
+        <dd><a href="" id="commit-link" target="_blank"></a></dd>
+
         <dt>Date</dt>
         <dd id="commit-date"></dd>
-      
+
         <dt>Time</dt>
         <dd id="commit-time"></dd>
-      
+
         <dt>Author</dt>
         <dd id="commit-author"></dd>
-      
+
         <dt>Lines Edited</dt>
         <dd id="commit-lines"></dd>
-      </dl>
-      
+    </dl>
+
     <script src="main.js" type="module"></script>
 
 </body>
