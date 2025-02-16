@@ -191,6 +191,7 @@ function updateLanguageBreakdown() {
 
     const lines = selectedCommits.flatMap((d) => d.lines);
     
+    
     // Use d3.rollup to count lines per language
     const breakdown = d3.rollup(
         lines,
