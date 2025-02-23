@@ -1,5 +1,12 @@
 [
     {
+        "title": "Bikewatching: Analyzing Bike Traffic in Boston",
+        "year": "2024",
+        "image": "lib/images/Bikewatching.png",
+        "description": "This project visualizes bike traffic patterns in Boston using geospatial data from Bluebikes and city bike lane datasets. By integrating Mapbox, D3.js, and real-time filtering, we analyze station usage trends, traffic flow, and the impact of time on arrivals and departures. The project includes interactive features like a time slider, dynamic circle scaling, and a color-coded legend to distinguish traffic flow directions."
+    },
+    
+    {
         "title": "Recipe Rating Analysis Project",
         "year": "2024",
         "image": "lib/images/Recipe.png",
@@ -64,11 +71,5 @@
         "year": "2024",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Est, animi ad? Commodi sint aliquam dolores alias voluptates vero vitae dolore odio, nisi labore rerum quia, placeat praesentium ab corrupti esse cum a tempore molestiae eveniet? Saepe, cum deserunt!"
-    },
-    {
-        "title": "The impact of import tax on different classes' purchase behavior",
-        "year": "2025",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Ea, ab obcaecati dolorum nobis vel minus animi, at, deserunt tempore eaque laudantium! Ratione quo, autem voluptatem pariatur velit dignissimos ipsa animi dolore, inventore porro adipisci quae sed facere ipsum?"
     }
 ]
